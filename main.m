@@ -80,12 +80,12 @@ subplot(2,1,1), plotHarc([t,tHat],[j,jHat],[x(:,1),xHat(:,1)],[],modificatorF,mo
 grid on
 leg1 = legend('$\theta$','$\hat{\theta}$');
 set(leg1,'Interpreter','latex','Fontsize',20)
-xlabel('t [s]','Fontsize',15)
+xlabel('$t$ [s]','Fontsize',15,'Interpreter','latex')
 subplot(2,1,2), plotHarc([t,tHat],[j,jHat],[x(:,2),xHat(:,2)],[],modificatorF,modificatorJ);
 grid on
 leg2 = legend('$\omega$','$\hat{\omega}$');
 set(leg2,'Interpreter','latex','Fontsize',20)
-xlabel('t [s]','Fontsize',15)
+xlabel('$t$ [s]','Fontsize',15,'Interpreter','latex')
 
 % plot error
 figure(3) 
@@ -94,6 +94,6 @@ subplot(1,1,1)
 plotHarc([t,t],[jRes,jRes],[-x(:,1)+xHat(:,1),-x(:,2)+xHat(:,2)],[],modificatorF,modificatorJ)
 leg=legend('$\hat{\theta}-\theta$','$\hat{\omega}-\omega$');
 set(leg, 'Interpreter', 'latex','Fontsize',20)
-xlabel('t [s]','Fontsize',15)
+xlabel('$t$ [s]','Fontsize',15,'Interpreter','latex')
 grid on
 
